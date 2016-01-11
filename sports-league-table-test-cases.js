@@ -13,7 +13,9 @@ Test.assertSimilar(leagueCalculate("teamA","teamB","draw"), [["teamB",11],["team
 
 Test.describe("Random tests",function(){
 function randint(a,b){return Math.floor(Math.random()*(b-a+1)+a);}
-function leagueSolution(team1, team2, result) {return leagueSol=leagueSol.map( ([n,s]) => [n,s+((n==team1)*((result=="win")*3+(result=="draw")) || n==team2 && result=="draw")] ).sort((a,b) => (b[1]-a[1])||(a[0]>b[0]) )}
+function leagueSolution(team1, team2, result) {
+//solution kept secret!
+}
 var leagueTable = [["CodeWarriors",0],["Founders&Coders",0],["Quorans",0],["CodeCademists",0],["Eden of the East", 0],["Max Headroom", 0],["FSociety", 0],["Public Security Section 9", 0]]
 var leagueSol = [["CodeWarriors",0],["Founders&Coders",0],["Quorans",0],["CodeCademists",0],["Eden of the East", 0],["Max Headroom", 0],["FSociety", 0],["Public Security Section 9", 0]]
 var teams=["CodeWarriors", "Founders&Coders", "Quorans", "CodeCademists", "Eden of the East", "Max Headroom", "FSociety", "Public Security Section 9"]
