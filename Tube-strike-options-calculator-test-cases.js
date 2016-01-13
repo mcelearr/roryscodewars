@@ -10,9 +10,7 @@ Test.assertEquals(calculator(0.6, 0.4, 0),"Walk","Wow. Seriously? How lazy are y
 Test.describe("Random tests",function(){
     
   function solution(distance, busDrive, busWalk) {
-    var walkTime = distance/walk;
-    var busTime = busDrive/bus + busWalk/walk;
-    return walkTime<(1/6)||(busTime>=walkTime&&walkTime<2) ? "Walk" : "Bus" ;
+  //solution kept secret
   }
   
   for (var i = 0; i < 40; i++){
