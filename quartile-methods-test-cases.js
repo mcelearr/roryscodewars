@@ -27,21 +27,15 @@ Test.describe("Random tests",function(){
   var StatsTest = {};
     
     StatsTest.median = function(values) {
-      values.sort(function(a,b){return a-b});
-      var median = (values.length % 2 == 0) ? (values[(values.length/2) - 1] + values[(values.length / 2)]) / 2:values[Math.floor(values.length / 2)];
-      return Math.round(median * 100) / 100;
+      //spoiler alerts
     }; 
    
     StatsTest.lowerQuartile = function(values) {
-      values.sort(function(a,b){return a-b});
-      var q1Arr = (values.length % 2 == 0) ? values.slice(0, (values.length / 2)) : values.slice(0, Math.floor(values.length / 2));
-      return this.median(q1Arr);
+      //spoiler alerts
     };
     
     StatsTest.upperQuartile = function(values) {
-      values.sort(function(a,b){return a-b});
-      var q3Arr = (values.length % 2 == 0) ? values.slice((values.length / 2), values.length) : values.slice(Math.ceil(values.length / 2));
-      return this.median(q3Arr);
+      //spoiler alerts
     };
  
   for (var i = 0; i < 20; i++){
