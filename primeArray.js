@@ -25,17 +25,23 @@ function isPrime(n){
 }
 
 function primeArray(n){
-
-
+   var primes = [];
+   var i = 0;
+   while (primes.length<n){
+     if (isPrime(i) === true){
+       primes.push(i);
+     }
+     i++;
+   }
+  return primes;
 }
 
-
-console.log(primeArray(1) === [2]);
-console.log(primeArray(2) === [2,3]);
-console.log(primeArray(3) === [2,3,5]);
-console.log(primeArray(4) === [2,3,5,7]);
-console.log(primeArray(5) === [2,3,5,7,11]);
-console.log(primeArray(6) === [2,3,5,7,11,13]);
-console.log(primeArray(7) === [2,3,5,7,11,13,17]);
-console.log(primeArray(8) === [2,3,5,7,11,13,17,19]);
-console.log(primeArray(9) === [2,3,5,7,11,13,17,19,23]);
+console.log(primeArray(1) == [2]);
+console.log(primeArray(2) == [2,3]);
+console.log(primeArray(3) == [2,3,5]);
+console.log(primeArray(4) == [2,3,5,7]);
+console.log(primeArray(5) == [2,3,5,7,11]);
+console.log(primeArray(6) == [2,3,5,7,11,13]);
+console.log(primeArray(7) == [2,3,5,7,11,13,17]);
+console.log(primeArray(8) == [2,3,5,7,11,13,17,19]);
+console.log(primeArray(9) == [2,3,5,7,11,13,17,19,23]);
