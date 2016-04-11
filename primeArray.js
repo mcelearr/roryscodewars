@@ -42,7 +42,7 @@ function updatePrimes(array,limit){
 
   var start = j % 6 == 1 ? j-1 : j+1;
 
-  for (var i = start || array.length; i <= limit; i+=6) {
+  for (var i = start; i <= limit; i+=6) {
     //console.log(i);
     if (isPrime(i-1) && i-1 != array[array.length - 1]) array.push(i-1);
     if (isPrime(i+1)) array.push(i+1);
@@ -53,13 +53,13 @@ function updatePrimes(array,limit){
 
   console.log(updatePrimes(primes,70));
 
-  var start = new Date();  // log start timestamp
-  for (var i = 0; i < 20000; i++) {
-      updatePrimes(primes,70);
-  }
-  var end =  new Date();  // log end timestamp
-  var diff = end - start;
-  console.log(diff.toString());
+  // var start = new Date();  // log start timestamp
+  // for (var i = 0; i < 20000; i++) {
+  //     updatePrimes(primes,70);
+  // }
+  // var end =  new Date();  // log end timestamp
+  // var diff = end - start;
+  // console.log(diff.toString());
 
 
 // console.log(primeArray(1) == [2]);
